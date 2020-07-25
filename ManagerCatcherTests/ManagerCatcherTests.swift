@@ -10,25 +10,42 @@ import XCTest
 @testable import ManagerCatcher
 
 class ManagerCatcherTests: XCTestCase {
+    
+    //@Cache(.user)
+    //var nameUser: String?
+    var timerExpectation = 5.0
+    var loginStatus: MemoryCacheManager?
+    
 
     override func setUpWithError() throws {
+        continueAfterFailure = false
+        self.loginStatus = MemoryCacheManager()
+        self.loginStatus!.put(true, forKey: "loginStatusKey", secondsToExpire: 60.0, scope: CacheScope.user.rawValue)
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDownWithError() throws {
+        loginStatus = nil
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    
+    
+    func testSessionUserLogin(){
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        //nameUser = "leono"
+        let exp = expectation(description: "Test after \(timerExpectation) seconds")
+        let result = XCTWaiter.wait(for: [exp], timeout: timerExpectation)
+        
+        //cambiar de estado
+        //self.loginStatus!.put(false, forKey: "loginStatusKey")
+        
+        if result == XCTWaiter.Result.timedOut {
+            let statusLoginUser = self.loginStatus?.value(forKey: "loginStatusKey", type: Bool.self)
+            XCTAssertNotNil(statusLoginUser, "Usurio no tiene sesion")
+            XCTAssertTrue(statusLoginUser!, "Usuario logueado")
+        } else {
+            XCTFail("Delay interrupted")
         }
     }
-
 }

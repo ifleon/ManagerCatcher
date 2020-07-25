@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5DEC7A2C24CC069C00498F82"
-               BuildableName = "ManagerCatcher.framework"
-               BlueprintName = "ManagerCatcher"
+               BlueprintIdentifier = "5DEC7A4A24CC098D00498F82"
+               BuildableName = "ManagerCatcherExample.app"
+               BlueprintName = "ManagerCatcherExample"
                ReferencedContainer = "container:ManagerCatcher.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,16 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5DEC7A3524CC069D00498F82"
-               BuildableName = "ManagerCatcherTests.xctest"
-               BlueprintName = "ManagerCatcherTests"
-               ReferencedContainer = "container:ManagerCatcher.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -51,6 +41,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5DEC7A4A24CC098D00498F82"
+            BuildableName = "ManagerCatcherExample.app"
+            BlueprintName = "ManagerCatcherExample"
+            ReferencedContainer = "container:ManagerCatcher.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -58,15 +58,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5DEC7A2C24CC069C00498F82"
-            BuildableName = "ManagerCatcher.framework"
-            BlueprintName = "ManagerCatcher"
+            BlueprintIdentifier = "5DEC7A4A24CC098D00498F82"
+            BuildableName = "ManagerCatcherExample.app"
+            BlueprintName = "ManagerCatcherExample"
             ReferencedContainer = "container:ManagerCatcher.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

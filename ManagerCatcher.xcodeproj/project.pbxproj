@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D01C31324CC4D9D00FB8276 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C31224CC4D9D00FB8276 /* Cache.swift */; };
+		5D01C31924CC4DB300FB8276 /* CoreDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C31424CC4DB200FB8276 /* CoreDependencyContainer.swift */; };
+		5D01C31A24CC4DB300FB8276 /* CoreDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C31524CC4DB200FB8276 /* CoreDependencyProvider.swift */; };
+		5D01C31B24CC4DB300FB8276 /* CoreDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C31624CC4DB300FB8276 /* CoreDependency.swift */; };
+		5D01C31C24CC4DB300FB8276 /* RepeatingBackgroundTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C31724CC4DB300FB8276 /* RepeatingBackgroundTimer.swift */; };
+		5D01C31D24CC4DB300FB8276 /* CacheEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C31824CC4DB300FB8276 /* CacheEntry.swift */; };
+		5D01C31F24CC4DBC00FB8276 /* MemoryCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C31E24CC4DBC00FB8276 /* MemoryCacheManager.swift */; };
 		5DEC7A3724CC069D00498F82 /* ManagerCatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEC7A2D24CC069C00498F82 /* ManagerCatcher.framework */; };
 		5DEC7A3C24CC069D00498F82 /* ManagerCatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEC7A3B24CC069D00498F82 /* ManagerCatcherTests.swift */; };
 		5DEC7A3E24CC069D00498F82 /* ManagerCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEC7A3024CC069C00498F82 /* ManagerCatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D01C31224CC4D9D00FB8276 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		5D01C31424CC4DB200FB8276 /* CoreDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDependencyContainer.swift; sourceTree = "<group>"; };
+		5D01C31524CC4DB200FB8276 /* CoreDependencyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDependencyProvider.swift; sourceTree = "<group>"; };
+		5D01C31624CC4DB300FB8276 /* CoreDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDependency.swift; sourceTree = "<group>"; };
+		5D01C31724CC4DB300FB8276 /* RepeatingBackgroundTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatingBackgroundTimer.swift; sourceTree = "<group>"; };
+		5D01C31824CC4DB300FB8276 /* CacheEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheEntry.swift; sourceTree = "<group>"; };
+		5D01C31E24CC4DBC00FB8276 /* MemoryCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryCacheManager.swift; sourceTree = "<group>"; };
 		5DEC7A2D24CC069C00498F82 /* ManagerCatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ManagerCatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DEC7A3024CC069C00498F82 /* ManagerCatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerCatcher.h; sourceTree = "<group>"; };
 		5DEC7A3124CC069C00498F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +108,13 @@
 		5DEC7A2F24CC069C00498F82 /* ManagerCatcher */ = {
 			isa = PBXGroup;
 			children = (
+				5D01C31224CC4D9D00FB8276 /* Cache.swift */,
+				5D01C31824CC4DB300FB8276 /* CacheEntry.swift */,
+				5D01C31624CC4DB300FB8276 /* CoreDependency.swift */,
+				5D01C31424CC4DB200FB8276 /* CoreDependencyContainer.swift */,
+				5D01C31524CC4DB200FB8276 /* CoreDependencyProvider.swift */,
+				5D01C31724CC4DB300FB8276 /* RepeatingBackgroundTimer.swift */,
+				5D01C31E24CC4DBC00FB8276 /* MemoryCacheManager.swift */,
 				5DEC7A3024CC069C00498F82 /* ManagerCatcher.h */,
 				5DEC7A3124CC069C00498F82 /* Info.plist */,
 			);
@@ -202,6 +223,7 @@
 				TargetAttributes = {
 					5DEC7A2C24CC069C00498F82 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					5DEC7A3524CC069D00498F82 = {
 						CreatedOnToolsVersion = 11.5;
@@ -263,6 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D01C31A24CC4DB300FB8276 /* CoreDependencyProvider.swift in Sources */,
+				5D01C31324CC4D9D00FB8276 /* Cache.swift in Sources */,
+				5D01C31F24CC4DBC00FB8276 /* MemoryCacheManager.swift in Sources */,
+				5D01C31924CC4DB300FB8276 /* CoreDependencyContainer.swift in Sources */,
+				5D01C31C24CC4DB300FB8276 /* RepeatingBackgroundTimer.swift in Sources */,
+				5D01C31B24CC4DB300FB8276 /* CoreDependency.swift in Sources */,
+				5D01C31D24CC4DB300FB8276 /* CacheEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +466,7 @@
 		5DEC7A4224CC069D00498F82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -452,6 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = leonfrcol.ManagerCatcher;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +491,7 @@
 		5DEC7A4324CC069D00498F82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -483,6 +515,7 @@
 		5DEC7A4524CC069D00498F82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ManagerCatcherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +533,7 @@
 		5DEC7A4624CC069D00498F82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ManagerCatcherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
